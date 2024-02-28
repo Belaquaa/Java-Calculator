@@ -1,0 +1,13 @@
+HELP.md
+target/
+out/
+.mvn/
+mvnw
+mvnw.cmd
+!**/src/main/**/target/
+!**/src/test/**/target/
+**/.DS_Store
+.idea/
+*.iws
+*.iml
+*.ipr
