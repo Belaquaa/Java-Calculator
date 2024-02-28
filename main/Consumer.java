@@ -15,23 +15,6 @@ public class Consumer {
         getExpression();
     }
 
-    private void getExpression() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the expression in the format '2 + 2':");
-
-        String input = scanner.nextLine();
-        String[] parts = input.split(" ");
-
-        if (parts.length != 3) {
-            throw new IllegalArgumentException("Invalid input format. Must be two numbers and an operator");
-        }
-        String operator = parts[1];
-        if (!operator.equals("+") && !operator.equals("-") && !operator.equals("*") && !operator.equals("/")) {
-            throw new IllegalArgumentException("Invalid operator. Must be one of +, -, *, /");
-        }
-
-        expression = parts;
-    }
 
     public int getNum1() {
         try {
@@ -60,5 +43,23 @@ public class Consumer {
 
     public boolean isRoman() {
         return isRoman;
+    }
+
+    private void getExpression() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the expression in the format '2 + 2':");
+
+        String input = scanner.nextLine();
+        String[] parts = input.split(" ");
+
+        if (parts.length != 3) {
+            throw new IllegalArgumentException("Invalid input format. Must be two numbers and an operator");
+        }
+        String operator = parts[1];
+        if (!operator.equals("+") && !operator.equals("-") && !operator.equals("*") && !operator.equals("/")) {
+            throw new IllegalArgumentException("Invalid operator. Must be one of +, -, *, /");
+        }
+
+        expression = parts;
     }
 }
