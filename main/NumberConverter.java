@@ -11,7 +11,7 @@ public class NumberConverter {
 
     public String arabicToRoman(int number) {
         if (number <= 0 || number > 3999) {
-            throw new IllegalArgumentException("Number must be in the range 1-3999");
+            throw new IllegalArgumentException("Answer must be in the range 1-3999");
         }
         StringBuilder roman = new StringBuilder();
         for (int i = 0; i < ARABIC_NUMBERS.length; i++) {
