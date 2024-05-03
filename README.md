@@ -16,7 +16,7 @@
 
 ## Установка и запуск
 
-1. Клонируйте репозиторий: git clone https://github.com/Belaquaa/Calculator-.git
+1. Клонируйте репозиторий: git clone https://github.com/Belaquaa/SmartCalc.git
 2. Откройте проект в вашей среде разработки Java.
 3. Соберите проект и создайте исполняемый JAR-файл.
 4. Запустите калькулятор.
